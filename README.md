@@ -8,7 +8,15 @@ recommend learning a more popular general purpose language first, such as
 [Python](http://www.python.org) then tinkering with other languages like
 [Ruby](http://www.ruby-lang.org), [Java](www.java.com) or
 [C](http://c.learncodethehardway.org/book/). The browser is still a prolific
-tool so learning [JavaScript](http://www.w3schools.com/js/) is also a good move.
+tool so learning [JavaScript](http://www.w3schools.com/js/) is also a good
+choice.
+
+Also note, this series is in progress. I am writing this series to document
+what I am learning so that it may be shared with others. Some of the
+information in here may be based on misconceptions or fall out of date, if you
+find anything incorrect or incomplete please let me know via GitHub Issues or a
+handy-dandy Pull Request! Thank you!
 
 ## Tutorial Chapters
-* [Chapter 1: The strange bits of lua]()
+* [Chapter 1: Getting Luvit setup locally](https://github.com/KennethWilke/learn-to-luvit/tree/master/chapter1)
+* [Chapter 2: The strange bits of Lua](https://github.com/KennethWilke/learn-to-luvit/tree/master/chapter2)
