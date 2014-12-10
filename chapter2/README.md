@@ -47,7 +47,7 @@ end
 ```
 
 In some languages, like Python, empty strings are considered to be a false in
-boolean operations, but in lua this is also true.
+boolean operations, but in Lua this is also true.
 
 ```lua
 if "" then
@@ -55,7 +55,7 @@ if "" then
 end
 ```
 
-## Lexical scoping (Closures), knowledge is power!
+## Lexical scoping (Closures)
 
 Lexical scoping can be a little odd if this is your first run in with it. It's
 all about a function defined within another function that has the scope of the
