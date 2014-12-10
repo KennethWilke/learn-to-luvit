@@ -66,8 +66,8 @@ end
 ## Lua starts at 1 for indexing
 
 When you use the `table` type or `string` type in Lua, you may be surprised to
-notice that the first element is at index 1. This can be odd when you're used
-to starting at0, but is something you get used to after a short time.
+notice that the first element is at index `1`. This can be odd when you're used
+to starting at `0`, but is something you get used to after a short time.
 
 ## Function calls don't require parenthesis
 
