@@ -42,4 +42,4 @@ If installing this way, be sure to add the luvit binary to your $PATH.
 
 And you got it! You're ready to go!
 
-[Next Chapter](https://github.com/KennethWilke/learn-to-luvit/tree/master/chapter2)
+[Next Chapter: The strange bits of Lua](https://github.com/KennethWilke/learn-to-luvit/tree/master/chapter2)

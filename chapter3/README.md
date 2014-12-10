@@ -1,7 +1,7 @@
-# Writing Lua
+# Variables and types in Lua
 
-In this chapter we'll dig into the core syntax of Lua, with some examples of
-most types and control structures.
+In this chapter we'll dig into the variables in Lua and the datatypes they can
+contain.
 
 ## Variable names (Identifiers)
 
@@ -21,7 +21,7 @@ this_is_a_global = true
 local this_is_not_global = true
 ```
 
-## Variables and Types in Lua
+## Lua variable types
 
 Lua is a simple language. It is dynamically typed and there are only a few
 types.
@@ -76,12 +76,17 @@ I replied, "I'm learning this Lua thing."
 
 ### Tables in Lua
 
-It's an array! It's an associative array! It's an object!
+Tables are THE data structuring type in Lua. They can be used like an array or
+list, like a dictionary, hash map, or associative array, and they provide a
+nice means to make objects for object oriented styles of programming. Table's
+are used fairly similarly to other languages, using square brackets for
+accessing elements of the table, but can accept any data type as the index
+(except `nil`)
 
-Tables are THE complex type in Lua. They can be used like an array or list,
-like a dictionary, hash map, or associative array, and they provide a nice
-means to make objects for object oriented styles of programming. So fancy!
+Utilizing tables requires a bit more practice with Lua expressions and
+statements, so we'll visit that in the next chapter.
 
-#### Using a table as an array or list
 
-TODO
+[Previous Chapter: The strange bits of Lua](https://github.com/KennethWilke/learn-to-luvit/tree/master/chapter2)
+
+[Next Chapter: Writing Lua](https://github.com/KennethWilke/learn-to-luvit/tree/master/chapter4)

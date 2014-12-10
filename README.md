@@ -20,4 +20,5 @@ handy-dandy Pull Request! Thank you!
 ## Tutorial Chapters
 * [Chapter 1: Getting Luvit setup locally](https://github.com/KennethWilke/learn-to-luvit/tree/master/chapter1)
 * [Chapter 2: The strange bits of Lua](https://github.com/KennethWilke/learn-to-luvit/tree/master/chapter2)
-* [Chapter 3: Writing Lua](https://github.com/KennethWilke/learn-to-luvit/tree/master/chapter3)
+* [Chapter 3: Variables and types in Lua](https://github.com/KennethWilke/learn-to-luvit/tree/master/chapter3)
+* [Chapter 4: Writing Lua](https://github.com/KennethWilke/learn-to-luvit/tree/master/chapter4)

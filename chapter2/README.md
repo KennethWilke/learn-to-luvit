@@ -129,6 +129,6 @@ Don't worry if you don't understand lexical scoping quite yet, they can be
 tricky but they are also very useful. Come back to them later once you have a
 better grasp of Lua or a need for them.
 
-[Previous Chapter](https://github.com/KennethWilke/learn-to-luvit/tree/master/chapter1)
+[Previous Chapter: Getting Luvit setup locally](https://github.com/KennethWilke/learn-to-luvit/tree/master/chapter1)
 
-[Next Chapter](https://github.com/KennethWilke/learn-to-luvit/tree/master/chapter3)
+[Next Chapter: Variables and types in Lua](https://github.com/KennethWilke/learn-to-luvit/tree/master/chapter3)
