@@ -13,7 +13,7 @@ also extremely helpful. Luvit uses LuaJIT under the hood, so
 ecosystem as well.
 
 Even though we haven't touched on the Lua language at all, I want to share the
-3 main things that I find important to understand about Lua.
+5 main things that I find important to understand about Lua.
 
 ## The syntax of Lua
 
@@ -63,6 +63,25 @@ if "" then
 end
 ```
 
+## Lua starts at 1 for indexing
+
+When you use the `table` type or `string` type in Lua, you may be surprised to
+notice that the first element is at index 1. This can be odd when you're used
+to starting at0, but is something you get used to after a short time.
+
+## Function calls don't require parenthesis
+
+I still recommend using parenthesis since it improves code readability, but
+it's important to know that functions can be called without them. Without
+parenthesis you can only supply a single argument to the function, which will
+be the next identifier in your code.
+
+These two lines are identical in operation
+```lua
+print("hello!")
+print "hello!"
+```
+
 ## Lexical scoping (Closures)
 
 Lexical scoping can be a little odd if this is your first run in with it. It's
@@ -109,3 +128,7 @@ in the `for` loop that function will be called until no value is returned
 Don't worry if you don't understand lexical scoping quite yet, they can be
 tricky but they are also very useful. Come back to them later once you have a
 better grasp of Lua or a need for them.
+
+[Previous Chapter](https://github.com/KennethWilke/learn-to-luvit/tree/master/chapter1)
+
+[Next Chapter](https://github.com/KennethWilke/learn-to-luvit/tree/master/chapter3)
