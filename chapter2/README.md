@@ -7,6 +7,9 @@ some of the ways Lua is a bit different than other common languages.
 Lua.org has a good book that covers the Lua programming language in more depth,
 the first edition is freely available at http://www.lua.org/pil/contents.html
 
+Even though we haven't touched on the Lua language at all, I want to share the
+3 main things that I find important to understand about Lua.
+
 ## The syntax of Lua
 
 Lua is not in the syntactic style of C, full of semicolons and curly brackets,
