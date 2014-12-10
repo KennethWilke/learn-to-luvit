@@ -4,8 +4,11 @@ Now that we have Luvit installed, we're ready to start pounding out some Lua.
 Before we get too into it though lets look at some of the syntax of Lua and
 some of the ways Lua is a bit different than other common languages.
 
-Lua.org has a good book that covers the Lua programming language in more depth,
+As with any language it's important to keep good documentation close at hand.
+Lua.org has a good book that covers the Lua programming language in depth,
 the first edition is freely available at http://www.lua.org/pil/contents.html
+Additionally, the [Lua Reference Manual](http://www.lua.org/manual/5.2/) is
+also extremely helpful.
 
 Even though we haven't touched on the Lua language at all, I want to share the
 3 main things that I find important to understand about Lua.
