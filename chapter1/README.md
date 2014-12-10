@@ -3,7 +3,7 @@
 These steps we preformed on an Ubuntu 14.10 (Utopic Unicorn) VM, if this
 doesn't work for you please submit a Pull Request to improve this document. The
 Git command line tools will be used for setup and must be installed on your
-system. The make program is also required for building.
+system.
 
 ## Clone down the luvit/luvit repo
 
@@ -30,6 +30,15 @@ Then, as a root user, install it
 ```
 # make install
 ```
+
+If you don't have make you could also build as such:
+
+```
+$ `LUVI_APP=app LUVI_TARGET=luvit luvi-binaries/`uname -s`_`uname -m`/luvi
+```
+
+If installing this way, be sure to add the luvit binary to your $PATH.
+
 
 And you got it! You're ready to go!
 

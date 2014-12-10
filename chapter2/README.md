@@ -7,8 +7,10 @@ some of the ways Lua is a bit different than other common languages.
 As with any language it's important to keep good documentation close at hand.
 Lua.org has a good book that covers the Lua programming language in depth,
 the first edition is freely available at http://www.lua.org/pil/contents.html
-Additionally, the [Lua Reference Manual](http://www.lua.org/manual/5.2/) is
-also extremely helpful.
+Additionally, the [Lua Reference Manual](http://www.lua.org/manual/5.1/) is
+also extremely helpful. Luvit uses LuaJIT under the hood, so
+[those extensions](http://luajit.org/extensions.html) are part of the luvit
+ecosystem as well.
 
 Even though we haven't touched on the Lua language at all, I want to share the
 3 main things that I find important to understand about Lua.
