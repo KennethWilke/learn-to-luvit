@@ -22,3 +22,4 @@ handy-dandy Pull Request! Thank you!
 * [Chapter 2: The strange bits of Lua](https://github.com/KennethWilke/learn-to-luvit/tree/master/chapter2)
 * [Chapter 3: Variables and types in Lua](https://github.com/KennethWilke/learn-to-luvit/tree/master/chapter3)
 * [Chapter 4: Writing Lua](https://github.com/KennethWilke/learn-to-luvit/tree/master/chapter4)
+* [Chapter 5: Object-oriented design patterns in Lua](https://github.com/KennethWilke/learn-to-luvit/tree/master/chapter5)

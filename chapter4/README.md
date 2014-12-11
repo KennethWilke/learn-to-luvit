@@ -73,6 +73,34 @@ else
 end
 ```
 
+In Lua the relational operators are similar to most languages. `<` `>` `<=`
+`>=` and `==` have their usual semantics. For not-equals Lua provides `~=`.
+
+For logical (boolean) operations the keywords `and` `or` and `not` may be used.
+
+In Lua, if the `and` operation hits a value that evaluates to `nil` or `false`
+the first instance one of those two values will be returned.
+```lua
+local test = nil and false  -- test will be nil
+test = false and nil        -- test will be false
+```
+
+If both operands of the `and` operation are valid, the last will be the
+returned value of that operation
+```lua
+local test = 1 and true  -- test will be true
+test = true and "hay!"   -- test will be "hay!"
+```
+
+This is similar to what the `or` operation does, this operation will return the
+first value that evaluates to true.
+```lua
+local test = false or true  -- test will be true
+test = "woooooo" or nil     -- test will be "woooooo"
+```
+
+The `not` operator in Lua always returns a boolean type value.
+
 ## while and repeat statements
 
 As in other languages, the `while` statement will repeat an operation until a
@@ -140,13 +168,54 @@ As with `while` and `repeat` loops the `break` keyword can be used to terminate
 the `for` loop early.
 
 Generic `for` loops are great for use with iterative functions. This example
-uses the `pairs` function in Lua, this function allows iteration over the keys
-of a table. This bit of code prints each key in `html_colors`.
+uses the `pairs` function in Lua, this function returns an iterator that
+returns each key in a table. This bit of code prints each key in `html_colors`.
 ```lua
 local html_colors = {blue="#0000ff", green="#00ff00", indigo="#4b0082"}
-for key in pairs(my_table) do
+for key in pairs(html_colors) do
   print(key)
 end
 ```
 
+## Functions
+
+At last, we've gotten to the mighty `function` statement! Functions are pretty
+much the same as in other languages.
+
+```lua
+function do_thangs(argument1, argument2)
+  print(argument1)
+  print(argument2)
+  return argument2
+end
+```
+
+Functions can return multiple variables and functions that have no `return`
+statements return `nil`. 
+```lua
+function moar_thangs()
+  return 12, 34
+end
+
+local x, y = moar_thangs()
+```
+
+Like JavaScript, Lua supports anonymous functions. These are unnamed functions
+but they can be assigned to variables, making the two examples below
+effectively the same. 
+```lua
+local wrap_with_h1 = function(wrap_this_string)
+  print("<h1>" .. wrap_this_string .. "</h1>")
+end
+```
+```lua
+function wrap_with_h1(wrap_this_string)
+  print("<h1>" .. wrap_this_string .. "</h1>")
+end
+```
+
+The `..` operator in this example is Lua's string concatenation operation.
+
 [Previous Chapter: Variables and types in Lua](https://github.com/KennethWilke/learn-to-luvit/tree/master/chapter3)
+
+[Next Chapter: Object-oriented design patterns in Lua](https://github.com/KennethWilke/learn-to-luvit/tree/master/chapter5)
