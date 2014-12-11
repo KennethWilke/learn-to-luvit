@@ -79,14 +79,14 @@ In Lua the relational operators are similar to most languages. `<` `>` `<=`
 For logical (boolean) operations the keywords `and` `or` and `not` may be used.
 
 In Lua, if the `and` operation hits a value that evaluates to `nil` or `false`
-the first instance one of those two values will be returned.
+that value will be returned.
 ```lua
 local test = nil and false  -- test will be nil
 test = false and nil        -- test will be false
 ```
 
 If both operands of the `and` operation are valid, the last will be the
-returned value of that operation
+returned value of that operation.
 ```lua
 local test = 1 and true  -- test will be true
 test = true and "hay!"   -- test will be "hay!"
