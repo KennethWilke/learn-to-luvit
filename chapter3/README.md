@@ -83,9 +83,34 @@ are used fairly similarly to other languages, using square brackets for
 accessing elements of the table, but can accept any data type as the index
 (except `nil`)
 
-Utilizing tables requires a bit more practice with Lua expressions and
-statements, so we'll visit that in the next chapter.
+A table can be created in a few different formats, here's an array-like table.
+Keep in mind these types of tables start at 1, not 0. This example outputs
+`two`.
+```lua
+local my_table = {"one", "two", "three"}
+print(my_table[2])
+```
 
+To create a table with strings for indexes, this format may be used
+```lua
+local ages = {joe=20, stephanie=23, john=34}
+print(ages["john"])
+```
+
+As mentioned before anything that is not `nil` can be used as the index for a
+table, to use non-string values wrap the key in square brackets as shown here.
+```lua
+local empty_table = {}
+local mixed_key_types = {[42]="numbas!", [false]="booleans!",
+                         ["string_key"]="strings!", [empty_table]="tables!"}
+```
+
+You can also create an array-like table starting on any value you'd like, each
+successive value will be iterated by 1, somewhat like an enum in C. This example will print out `others`.
+```lua
+local zero_indexed = {[0]="like", "those", "others", "do"}
+print(zero_indexed[2])
+```
 
 [Previous Chapter: The strange bits of Lua](https://github.com/KennethWilke/learn-to-luvit/tree/master/chapter2)
 
