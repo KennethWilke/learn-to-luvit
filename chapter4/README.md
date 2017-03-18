@@ -146,7 +146,7 @@ end
 ## for loops
 
 `for` loops in Lua come in two flavors, numeric and generic (iterative) loops.
-Numeric loops are look similar to for loops in C do not behave the same. The
+Numeric loops look similar to for loops in C but do not behave the same. The
 first expression is an initializer still, but the second expression is not a
 condition it is a limit. The third, optional, expression is a step value that
 will be added to the loops iterator, 1 if not specified.
