@@ -165,7 +165,7 @@ for i=10,1,-2 do
 end
 ```
 
-As with `while` and `repeat` loops the `break` keyword can be used to terminate
+As with `while` and `repeat` loops, the `break` keyword can be used to terminate
 the `for` loop early.
 
 Generic `for` loops are great for use with iterative functions. This example
