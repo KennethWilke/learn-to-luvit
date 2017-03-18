@@ -115,6 +115,8 @@ end
 print(iterations .. " > 0 is " .. tostring(iterations > 0))
 ```
 
+The `..` operator in this example is Lua's string concatenation operation.
+
 Lua also has the `repeat` statement that is similar to a do-while loop in other
 languages in that this loop will always iterate at least once, but it uses the
 `until` keyword to continue iterating until a condition is `false`.
@@ -214,8 +216,6 @@ function wrap_with_h1(wrap_this_string)
   print("<h1>" .. wrap_this_string .. "</h1>")
 end
 ```
-
-The `..` operator in this example is Lua's string concatenation operation.
 
 [Previous Chapter: Variables and types in Lua](https://github.com/KennethWilke/learn-to-luvit/tree/master/chapter3)
 
