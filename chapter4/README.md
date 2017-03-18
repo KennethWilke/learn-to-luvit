@@ -104,14 +104,15 @@ The `not` operator in Lua always returns a boolean type value.
 ## while and repeat statements
 
 As in other languages, the `while` statement will repeat an operation until a
-condition is `true`.
+condition is `false`.
 
 ```lua
 local iterations = 10
 while iterations > 0 do
-  print(iterations)
+  print(iterations .. " > 0 is " .. tostring(iterations > 0))
   iterations = iterations - 1
 end
+print(iterations .. " > 0 is " .. tostring(iterations > 0))
 ```
 
 Lua also has the `repeat` statement that is similar to a do-while loop in other
