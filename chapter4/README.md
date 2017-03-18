@@ -104,15 +104,18 @@ The `not` operator in Lua always returns a boolean type value.
 ## while and repeat statements
 
 As in other languages, the `while` statement will repeat an operation until a
-condition is `true`.
+condition is `false`.
 
 ```lua
 local iterations = 10
 while iterations > 0 do
-  print(iterations)
+  print(iterations .. " > 0 is " .. tostring(iterations > 0))
   iterations = iterations - 1
 end
+print(iterations .. " > 0 is " .. tostring(iterations > 0))
 ```
+
+The `..` operator in this example is Lua's string concatenation operation.
 
 Lua also has the `repeat` statement that is similar to a do-while loop in other
 languages in that this loop will always iterate at least once, but it uses the
@@ -145,7 +148,7 @@ end
 ## for loops
 
 `for` loops in Lua come in two flavors, numeric and generic (iterative) loops.
-Numeric loops are look similar to for loops in C do not behave the same. The
+Numeric loops look similar to for loops in C but do not behave the same. The
 first expression is an initializer still, but the second expression is not a
 condition it is a limit. The third, optional, expression is a step value that
 will be added to the loops iterator, 1 if not specified.
@@ -164,7 +167,7 @@ for i=10,1,-2 do
 end
 ```
 
-As with `while` and `repeat` loops the `break` keyword can be used to terminate
+As with `while` and `repeat` loops, the `break` keyword can be used to terminate
 the `for` loop early.
 
 Generic `for` loops are great for use with iterative functions. This example
@@ -213,8 +216,6 @@ function wrap_with_h1(wrap_this_string)
   print("<h1>" .. wrap_this_string .. "</h1>")
 end
 ```
-
-The `..` operator in this example is Lua's string concatenation operation.
 
 [Previous Chapter: Variables and types in Lua](https://github.com/KennethWilke/learn-to-luvit/tree/master/chapter3)
 
